@@ -1,0 +1,11 @@
+﻿{
+  "editable": [
+    "public/*"
+  ],
+  "excludes": [
+    ".gitignore",
+    ".gitattributes",
+    "challenge.json"
+  ],
+  "test": "mocha tests.js"
+}
