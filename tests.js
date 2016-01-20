@@ -76,6 +76,7 @@ describe("Step 3", function () {
     });
 
     it("main must have controller defined", function () {
+        assert.equal(window.jQuery("#main").attr("ng-controller"), "MyController");
     });
 });
 
