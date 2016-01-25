@@ -1,15 +1,15 @@
 ﻿## Step 1: Adding your App name to the body
-Open public/index.html, in which we all an atribute to the `body` tag.
+Open public/index.html, in which we add an atribute to the `body` tag.
 
 Modify the tag so the end results looks like this
 ```HTML
 <body ng-app="myApp">
 ```
 
-This lets Angular know we will be using the App called `MyApp`.
+This will let Angular know we will be using the App called `MyApp`.
 
 ## Step 2: Creating your App in the script
-Navigate to public/app.js, here we will assign the module that will be your App.
+Navigate to public/app.js, here we will assign the module that is going be your App.
 
 In app.js write the following code
 ```JavaScript
@@ -19,7 +19,7 @@ var app = angular.module("myApp", []);
 This creates a new Angular App called `MyApp`.
 
 ## Step 3: Adding the Controller name
-Open public/index.html again, we will place another attribute `ng-controller="MyController"` on a div with the id `main`
+Open public/index.html again, we will place another attribute `ng-controller="MyController"` on the div with the id `main`
 
 The result should look like this.
 ```HTML
@@ -36,7 +36,7 @@ app.controller("MyController", ["$scope", function ($scope) {
 }]);
 ```
 
-This will create a new Controller called `MyController` in our App. And in it's scope the will be a string called `text` containing `Hello World!`
+This creates a new Controller called `MyController` in our App. And in it's scope there will be a string called `text` containing `Hello World!`
 
 ## Step 5: Writing the text
 Now in public/index.html again, we will add `{{ text }}` as content for the div with the id `main`.
@@ -70,7 +70,7 @@ codecheck: success: 1
 codecheck: failure: 7
 ```
 
-The first lines of the output are all tests runing, a test that failed will show `not ok` and ones that ran succesfully will show `ok`, for example.
+The first lines of the output are all the tests that are running, a test that failed will show `not ok` and one that ran succesfully will show `ok`, for example.
 
 > not ok 1 Step 1 body must have angular app specified
 
