@@ -8,8 +8,8 @@
     "challenge.json"
   ],
   "tags": [
-    "AngularJS",
-    "Mocha"
+    "JavaScript",
+    "AngularJS"
   ],
   "test": "mocha tests.js"
 }
